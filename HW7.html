@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>HW4</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>HW7</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -15104,53 +15104,67 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
     <!-- End of mathjax configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 
-<div id="cell-id=2998f529" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=e6d99eea" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Homeworks-for-SM-I-course">Homeworks for SM-I course<a class="anchor-link" href="#Homeworks-for-SM-I-course">&#182;</a></h1>
+<h1 id="Homeworks-for-SM-I-course">Homeworks for SM-I course<a class="anchor-link" href="#Homeworks-for-SM-I-course">&#182;</a></h1><p>Important:</p>
+<p>1). Please download the latest grcodes, images, and related chapters before working on the homework.</p>
+<p>2). Both pdf files and the source codes must be submitted, or the work will not be marked.</p>
+
 </div>
 </div>
 </div>
 </div>
-<div id="cell-id=3fcfc53b" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=4dcadcba" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Homework-4:-Understanding-stresses,-strains-and-constitutive-relations">Homework 4: Understanding stresses, strains and constitutive relations<a class="anchor-link" href="#Homework-4:-Understanding-stresses,-strains-and-constitutive-relations">&#182;</a></h1>
+<h2 id="Homework-7:">Homework 7:<a class="anchor-link" href="#Homework-7:">&#182;</a></h2><p><strong>Question:</strong> Shafts with hollow cross-section subject to a torque</p>
+
 </div>
 </div>
 </div>
 </div>
-<div id="cell-id=4eddc6b3" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=0c6c5355" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Consider a thin square wing spar made of aluminum alloy that can be treated as a homogeneous isotropic material with Young's modulus $E$ and Poisson's ratio $𝜈$. It is subjected to uniform stress loading along all edges, as shown in the figure below. Because it is thin, and no force is applied in the $z$-direction, it can be treated a plane stress problem in x-y plane. The data are given as $E=80 GPa$, $𝜈=1/3$,$𝜎_{yy}=150 MPa$, and $L=100mm$.</p>
-<p><img src="images/SquareBiaxial.png" alt=" " width="300"/><br></p>
+<p>Consider a uniform bar made of Grade-304 stainless steel with shear modulus $ G=85 $ GPa. The cross-section is hollow circular with inner radius of $ a=48 $ mm, outer radius of $ b=50 $ mm. The length of the bar is $ L=0.7m $. It is fixed at $z=0$, and is subjected to a torque of $ T=900 $ Nm at $ z=L $, as shown below.</p>
+<p><img src="images/CylinderBarT.png" alt=" " width="580"/><br></p>
+<p>Stress on a hollow cylindrical cross-section of a uniform bar.</p>
+<p>Using the exact formulas calculate:</p>
 <ol>
-<li><p>Derive the formulas for computing the strain components.</p>
+<li><p>The maximum shear stress on the cross-section in the shaft.</p>
 </li>
-<li><p>Determine the stress load $𝜎_{xx}$ (in terms of $𝜎_{yy}$), under the condition that wing spar width remains unchanged. Compute the numerical value for given data.</p>
+<li><p>The twist angle at $x=L$.</p>
 </li>
-<li><p>Determine the strain and elongation in the $y$-direction, under the same condition given in 2). Compute the numerical value for given data.</p>
+<li><p>The stress components on the cross-section and by the lateral surface in the Cartesian coordinates on the $x$-axis.</p>
 </li>
-<li><p>Using the coordinate transformation rule, determine the elongation of the diagonal AC, under the same condition given in 2).</p>
+<li><p>The stress components on the cross-section and by the lateral surface in the Cartesian coordinates at $30^∘$ from the $x$-axis.</p>
 </li>
-<li><p>Determine the area change of the wing spar, under the same condition given in 2).</p>
+<li><p>The stress components on the cross-section and by the lateral surface in the Cartesian coordinates on the $y$-axis.</p>
+</li>
+<li><p>Compute the principle stresses in the shaft.</p>
+</li>
+<li><p>Compute the maximum shear stress in the shaft.</p>
+</li>
+<li><p>Assume the wall of the shaft is thin, using the formulas for thin-wall cross-section, repeat items 1 and 2. Compare the results obtained with those obtained using the exact formulas.</p>
+</li>
+<li><p>Using the same amount of material, but create a square cross-section with the same thickness. Repeat items 1 and 2. Compare the results obtained with those obtained in item 8.</p>
 </li>
 </ol>
 
 </div>
 </div>
 </div>
-</div><div id="cell-id=76cc6b7d" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div id="cell-id=762f56c5" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -15162,13 +15176,14 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <span class="kn">import</span> <span class="nn">sys</span>                         <span class="c1"># for accessing the computer system</span>
 <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;../grbin/&#39;</span><span class="p">)</span>  <span class="c1"># Change to the directory in your system </span>
 
-<span class="kn">from</span> <span class="nn">commonImports</span> <span class="kn">import</span> <span class="o">*</span>      <span class="c1"># Import dependences from &#39;../grbin/&#39;</span>
+<span class="kn">from</span> <span class="nn">commonImports</span> <span class="kn">import</span> <span class="o">*</span>       <span class="c1"># Import dependences from &#39;../grbin/&#39;</span>
 <span class="kn">import</span> <span class="nn">grcodes</span> <span class="k">as</span> <span class="nn">gr</span>                 <span class="c1"># Import the module of the author</span>
 <span class="c1">#importlib.reload(gr)            # When grcodes is modified, reload it</span>
 
 <span class="kn">from</span> <span class="nn">continuum_mechanics</span> <span class="kn">import</span> <span class="n">vector</span> 
 <span class="n">init_printing</span><span class="p">(</span><span class="n">use_unicode</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>      <span class="c1"># For latex-like quality printing </span>
-<span class="n">np</span><span class="o">.</span><span class="n">set_printoptions</span><span class="p">(</span><span class="n">precision</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span><span class="n">suppress</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>  <span class="c1"># Digits in print-outs</span>
+<span class="n">np</span><span class="o">.</span><span class="n">set_printoptions</span><span class="p">(</span><span class="n">precision</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span><span class="n">suppress</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> 
+       <span class="n">formatter</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;float&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{:0.4e}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">})</span>   <span class="c1"># Digits in print-outs</span>
 </pre></div>
 
      </div>
@@ -15177,7 +15192,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 
 </div>
-<div id="cell-id=d5ce6116" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=c6fb57d8" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -15190,141 +15205,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 </div>
-</div>
-<div id="cell-id=cd898986" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>No force in $z$ means this can be treated as a plane-stress problem</p>
-
-</div>
-</div>
-</div>
-</div>
-<div id="cell-id=a4cdbb36" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>$
-\begin{bmatrix}
-\sigma_{xx} \\
-\sigma_{yy} \\
-\sigma_{xy} 
-\end{bmatrix} = \begin{bmatrix}
-c_{xx} &amp; c_{xy} &amp; 0 \\
-c_{xy} &amp; c_{yy} &amp; 0 \\
-0 &amp; 0 &amp; c_{zz}
-\end{bmatrix} \begin{bmatrix}
-\epsilon_{xx} \\
-\epsilon_{yy} \\
-2 \epsilon_{xy}
-\end{bmatrix} \\
-\begin{bmatrix}
-\sigma_{xx} \\
-\sigma_{yy} \\
-\sigma_{xy} 
-\end{bmatrix} = \frac{E}{(1-v^2)} \begin{bmatrix}
-1 &amp; v &amp; 0 \\
-v &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; \frac{(1-v)}{2}
-\end{bmatrix} \begin{bmatrix}
-\epsilon_{xx} \\
-\epsilon_{yy} \\
-2 \epsilon_{xy}
-\end{bmatrix} \\
-\begin{bmatrix}
-\sigma_{xx} \\
-\sigma_{yy} \\
-\sigma_{xy} 
-\end{bmatrix} = \begin{bmatrix}
-\frac{E}{(1-v^2)} &amp; \frac{E v}{(1-v^2)} &amp; 0 \\
-\frac{E v}{(1-v^2)} &amp; \frac{E}{(1-v^2)} &amp; 0 \\
-0 &amp; 0 &amp; \frac{E(\frac{1}{2}-\frac{v}{2})}{1-v^2}
-\end{bmatrix} \begin{bmatrix}
-\epsilon_{xx} \\
-\epsilon_{yy} \\
-2 \epsilon_{xy}
-\end{bmatrix}
-$</p>
-
-</div>
-</div>
-</div>
-</div>
-<div id="cell-id=73036fa3" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>$
-\sigma_{xx} = \epsilon_{xx} \frac{E}{(1-v^2)} + \epsilon_{yy} \frac{E v}{1-v^2} \\
-\sigma_{yy} = \epsilon_{xx} \frac{E v}{(1-v^2)} + \epsilon_{yy} \frac{E}{1-v^2} \\
-\sigma_{xy} = 2 \epsilon_{xy} \frac{E (\frac{1}{2} - \frac{v}{2})}{1-v^2}
-$</p>
-
-</div>
-</div>
-</div>
-</div>
-<div id="cell-id=977da4d2" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Rearrainging and solving:</p>
-
-</div>
-</div>
-</div>
-</div>
-<div id="cell-id=b4148be9" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>$
-\epsilon_{xx} = \frac{1}{E} (\sigma_{xx} - v \sigma_{yy}) \\
-\epsilon_{yy} = \frac{1}{E} (\sigma_{yy} - v \sigma_{xx}) \\
-\epsilon_{xy} = \frac{\sigma_{xy} (1+v)}{E} \\
-$</p>
-
-</div>
-</div>
-</div>
-</div>
-<div id="cell-id=f292367c" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Additionally, strain in $z$ is non-zero:</p>
-
-</div>
-</div>
-</div>
-</div>
-<div id="cell-id=7bd21597" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>$
-\epsilon_{zz} = -\frac{v}{E} (\sigma_{xx} + \sigma_{yy})
-$</p>
-
-</div>
-</div>
-</div>
-</div><div id="cell-id=04262ec7" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div id="cell-id=f6fe6542" class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -15332,67 +15213,15 @@ $</p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sxx</span><span class="p">,</span> <span class="n">syy</span><span class="p">,</span> <span class="n">sxy</span><span class="p">,</span> <span class="n">exx</span><span class="p">,</span> <span class="n">eyy</span><span class="p">,</span> <span class="n">exy</span><span class="p">,</span> <span class="n">ezz</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">symbols</span><span class="p">(</span><span class="s2">&quot;sxx, syy, sxy, exx, eyy, exy, ezz&quot;</span><span class="p">)</span>
-<span class="n">E</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">symbols</span><span class="p">(</span><span class="s2">&quot;E, v&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">T</span> <span class="o">=</span> <span class="mi">900</span> <span class="c1"># Nm, torque</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mf">0.048</span><span class="p">;</span> <span class="n">b</span> <span class="o">=</span> <span class="mf">0.05</span> <span class="c1"># m, radii</span>
+<span class="n">J</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="p">(</span><span class="n">b</span><span class="o">**</span><span class="mi">4</span> <span class="o">-</span> <span class="n">a</span><span class="o">**</span><span class="mi">4</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span>
 
-<span class="n">C</span> <span class="o">=</span> <span class="p">(</span><span class="n">E</span><span class="o">/</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="p">(</span><span class="n">v</span><span class="o">**</span><span class="mi">2</span><span class="p">)))</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="n">v</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="n">v</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,((</span><span class="mi">1</span><span class="o">-</span><span class="n">v</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">)]])</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The polar second moment of area J = </span><span class="si">{</span><span class="n">J</span><span class="si">:</span><span class="s2">.4e</span><span class="si">}</span><span class="s2"> (m^4)&quot;</span><span class="p">)</span>
 
-<span class="n">stress</span> <span class="o">=</span> <span class="n">C</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="n">exx</span><span class="p">],[</span><span class="n">eyy</span><span class="p">],[</span><span class="mi">2</span><span class="o">*</span><span class="n">exy</span><span class="p">]])</span>
+<span class="n">maxshear</span> <span class="o">=</span> <span class="n">T</span><span class="o">*</span><span class="n">b</span><span class="o">/</span><span class="n">J</span>
 
-<span class="n">exx</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">E</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">sxx</span><span class="o">-</span><span class="p">(</span><span class="n">v</span><span class="o">*</span><span class="n">syy</span><span class="p">))</span>
-<span class="n">eyy</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">E</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">syy</span><span class="o">-</span><span class="p">(</span><span class="n">v</span><span class="o">*</span><span class="n">sxx</span><span class="p">))</span>
-<span class="n">exy</span> <span class="o">=</span> <span class="p">((</span><span class="n">sxy</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">v</span><span class="p">))</span><span class="o">/</span><span class="n">E</span><span class="p">)</span>
-<span class="n">ezz</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="o">*</span><span class="p">(</span><span class="n">v</span><span class="o">/</span><span class="n">E</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">sxx</span><span class="o">+</span><span class="n">syy</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div>
-<div id="cell-id=8950f423" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<ol start="2">
-<li></li>
-</ol>
-
-</div>
-</div>
-</div>
-</div>
-<div id="cell-id=d7e1a573" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>$
-\epsilon_{xx} = 0 = \frac{1}{E} (\sigma_{xx} - v \sigma_{yy}) \\
-v \sigma_{yy} = \sigma_{xx} \\
-$</p>
-
-</div>
-</div>
-</div>
-</div><div id="cell-id=2dc84e17" class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">vnum</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">3</span>
-<span class="n">Syy</span> <span class="o">=</span> <span class="mi">150</span> <span class="c1"># MPa</span>
-
-<span class="n">Sxx</span> <span class="o">=</span> <span class="n">vnum</span><span class="o">*</span><span class="n">Syy</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Stress in xx: </span><span class="si">%3.2f</span><span class="s2"> MPa&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">Sxx</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The maximum shear stress on the cross-section = </span><span class="si">{</span><span class="n">maxshear</span><span class="o">*</span><span class="mf">1.0e-6</span><span class="si">:</span><span class="s2">.4e</span><span class="si">}</span><span class="s2"> (MPa)&quot;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15412,7 +15241,8 @@ $</p>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Stress in xx: 50.00 MPa
+<pre>The polar second moment of area J = 1.4790e-06 (m^4)
+The maximum shear stress on the cross-section = 3.0425e+01 (MPa)
 </pre>
 </div>
 </div>
@@ -15422,7 +15252,62 @@ $</p>
 </div>
 
 </div>
-<div id="cell-id=dee3ea7c" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=1a2096e3" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ol start="2">
+<li></li>
+</ol>
+
+</div>
+</div>
+</div>
+</div><div id="cell-id=2919ac09" class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">G</span> <span class="o">=</span> <span class="mf">85e9</span> <span class="c1"># Pa</span>
+<span class="n">L</span> <span class="o">=</span> <span class="mf">.7</span> <span class="c1"># m</span>
+<span class="n">theta_t</span> <span class="o">=</span> <span class="n">T</span><span class="o">/</span><span class="p">(</span><span class="n">G</span><span class="o">*</span><span class="n">J</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Twist angle at x = L = </span><span class="si">{</span><span class="p">(</span><span class="n">theta_t</span><span class="o">*</span><span class="n">L</span><span class="p">)</span><span class="si">:</span><span class="s2">.4e</span><span class="si">}</span><span class="s2"> rad or </span><span class="si">{</span><span class="n">np</span><span class="o">.</span><span class="n">degrees</span><span class="p">(</span><span class="n">theta_t</span><span class="o">*</span><span class="n">L</span><span class="p">)</span><span class="si">:</span><span class="s2">.4e</span><span class="si">}</span><span class="s2">°&quot;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Twist angle at x = L = 5.0112e-03 rad or 2.8712e-01°
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div id="cell-id=9b3add2c" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -15435,7 +15320,7 @@ $</p>
 </div>
 </div>
 </div>
-</div><div id="cell-id=05eb99e9" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div id="cell-id=dbb5361a" class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -15443,37 +15328,13 @@ $</p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">transferM</span><span class="p">(</span><span class="n">theta</span><span class="p">,</span> <span class="n">about</span> <span class="o">=</span> <span class="s1">&#39;z&#39;</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&#39;&#39;&#39;Create a transformation matrix for coordinate transformation (numpy)\</span>
-<span class="sd">    Input theta: rotation angle in degree \</span>
-<span class="sd">          about: the axis of the rotation is about \</span>
-<span class="sd">    Return: numpy array of transformation matrix of shape (3,3)&#39;&#39;&#39;</span>
-    <span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">ortho_group</span>
-    
-    <span class="n">n</span> <span class="o">=</span> <span class="mi">3</span>        <span class="c1"># 3-dimensonal problem</span>
-    <span class="n">c</span><span class="p">,</span> <span class="n">s</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">deg2rad</span><span class="p">(</span><span class="n">theta</span><span class="p">)),</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">deg2rad</span><span class="p">(</span><span class="n">theta</span><span class="p">))</span>
-    <span class="c1">#T = np.zeros((n,n))</span>
-    
-    <span class="k">if</span> <span class="n">about</span> <span class="o">==</span> <span class="s1">&#39;z&#39;</span><span class="p">:</span>
-        <span class="c1"># rotates about z by theta </span>
-        <span class="n">T</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span> <span class="n">c</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="mf">0.</span><span class="p">],</span>
-                      <span class="p">[</span><span class="o">-</span><span class="n">s</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="mf">0.</span><span class="p">],</span>
-                      <span class="p">[</span><span class="mf">0.</span><span class="p">,</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">1.</span><span class="p">]])</span> 
-    <span class="k">elif</span> <span class="n">about</span> <span class="o">==</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span>
-        <span class="c1"># rotates about y by theta </span>
-        <span class="n">T</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span> <span class="n">c</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span><span class="o">-</span><span class="n">s</span><span class="p">],</span>
-                      <span class="p">[</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">1.</span><span class="p">,</span><span class="mf">0.</span><span class="p">],</span>
-                      <span class="p">[</span><span class="n">s</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="n">c</span><span class="p">]])</span>  
-    <span class="k">elif</span> <span class="n">about</span> <span class="o">==</span> <span class="s1">&#39;x&#39;</span><span class="p">:</span>
-        <span class="c1"># rotates about x by theta </span>
-        <span class="n">T</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span> <span class="mf">1.</span><span class="p">,</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">],</span>
-                      <span class="p">[</span> <span class="mf">0.</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">s</span><span class="p">],</span>
-                      <span class="p">[</span> <span class="mf">0.</span><span class="p">,</span><span class="o">-</span><span class="n">s</span><span class="p">,</span> <span class="n">c</span><span class="p">]])</span>
-    <span class="k">else</span><span class="p">:</span> <span class="c1"># randomly generated unitary matrix-&gt;transformation matrix, no theta</span>
-        <span class="n">T</span> <span class="o">=</span> <span class="n">ortho_group</span><span class="o">.</span><span class="n">rvs</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="n">n</span><span class="p">)</span>          <span class="c1"># Generate a random matrix</span>
-        <span class="n">T</span><span class="p">[</span><span class="mi">2</span><span class="p">,:]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">cross</span><span class="p">(</span><span class="n">T</span><span class="p">[</span><span class="mi">0</span><span class="p">,:],</span> <span class="n">T</span><span class="p">[</span><span class="mi">1</span><span class="p">,:])</span>   <span class="c1"># Enforce the righ-hand rule</span>
-        
-    <span class="k">return</span> <span class="n">T</span><span class="p">,</span> <span class="n">about</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">theta3</span> <span class="o">=</span> <span class="mf">0.0</span> <span class="c1"># On the x-axis, 𝜃=0</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">b</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">deg2rad</span><span class="p">(</span><span class="n">theta3</span><span class="p">))</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">b</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">deg2rad</span><span class="p">(</span><span class="n">theta3</span><span class="p">))</span>
+<span class="n">szx3</span> <span class="o">=</span> <span class="o">-</span><span class="n">theta_t</span><span class="o">*</span><span class="n">G</span><span class="o">*</span><span class="n">y</span>
+<span class="n">szy3</span> <span class="o">=</span> <span class="n">theta_t</span><span class="o">*</span><span class="n">G</span><span class="o">*</span><span class="n">x</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;On x-axis: σzx=</span><span class="si">{</span><span class="n">szx3</span><span class="o">*</span><span class="mf">1.0e-6</span><span class="si">:</span><span class="s2">.4e</span><span class="si">}</span><span class="s2">; σzy=</span><span class="si">{</span><span class="n">szy3</span><span class="o">*</span><span class="mf">1.0e-6</span><span class="si">:</span><span class="s2">.4e</span><span class="si">}</span><span class="s2"> (MPa)&quot;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15481,7 +15342,42 @@ $</p>
 </div>
 </div>
 
-</div><div id="cell-id=9cc54cb3" class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>On x-axis: σzx=-0.0000e+00; σzy=3.0425e+01 (MPa)
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div id="cell-id=2a0b5a56" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ol start="4">
+<li></li>
+</ol>
+
+</div>
+</div>
+</div>
+</div><div id="cell-id=1bccf7d6" class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -15489,11 +15385,234 @@ $</p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Enum</span> <span class="o">=</span> <span class="mf">80e3</span> <span class="c1"># MPa</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">theta4</span> <span class="o">=</span> <span class="mi">30</span>
+<span class="n">rad</span> <span class="o">=</span> <span class="n">theta4</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mf">180.</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">b</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">deg2rad</span><span class="p">(</span><span class="n">theta4</span><span class="p">))</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">b</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">deg2rad</span><span class="p">(</span><span class="n">theta4</span><span class="p">))</span>
+<span class="n">szx4</span> <span class="o">=-</span><span class="n">theta_t</span><span class="o">*</span><span class="n">G</span><span class="o">*</span><span class="n">y</span>
+<span class="n">szy4</span> <span class="o">=</span> <span class="n">theta_t</span><span class="o">*</span><span class="n">G</span><span class="o">*</span><span class="n">x</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;at 30°: σzx = </span><span class="si">{</span><span class="n">szx4</span><span class="o">*</span><span class="mf">1.0e-6</span><span class="si">:</span><span class="s2">.4e</span><span class="si">}</span><span class="s2">; σzy = </span><span class="si">{</span><span class="n">szy4</span><span class="o">*</span><span class="mf">1.0e-6</span><span class="si">:</span><span class="s2">.4e</span><span class="si">}</span><span class="s2"> (MPa)&quot;</span><span class="p">)</span>
+</pre></div>
 
-<span class="n">strainmatrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="nb">float</span><span class="p">(</span><span class="n">exx</span><span class="o">.</span><span class="n">subs</span><span class="p">({</span><span class="n">E</span><span class="p">:</span><span class="n">Enum</span><span class="p">,</span><span class="n">v</span><span class="p">:</span><span class="n">vnum</span><span class="p">,</span><span class="n">sxx</span><span class="p">:</span><span class="n">Sxx</span><span class="p">,</span><span class="n">syy</span><span class="p">:</span><span class="n">Syy</span><span class="p">})),</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="nb">float</span><span class="p">(</span><span class="n">eyy</span><span class="o">.</span><span class="n">subs</span><span class="p">({</span><span class="n">E</span><span class="p">:</span><span class="n">Enum</span><span class="p">,</span><span class="n">v</span><span class="p">:</span><span class="n">vnum</span><span class="p">,</span><span class="n">sxx</span><span class="p">:</span><span class="n">Sxx</span><span class="p">,</span><span class="n">syy</span><span class="p">:</span><span class="n">Syy</span><span class="p">})),</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="nb">float</span><span class="p">(</span><span class="n">ezz</span><span class="o">.</span><span class="n">subs</span><span class="p">({</span><span class="n">E</span><span class="p">:</span><span class="n">Enum</span><span class="p">,</span><span class="n">v</span><span class="p">:</span><span class="n">vnum</span><span class="p">,</span><span class="n">sxx</span><span class="p">:</span><span class="n">Sxx</span><span class="p">,</span><span class="n">syy</span><span class="p">:</span><span class="n">Syy</span><span class="p">}))]])</span>
+     </div>
+</div>
+</div>
+</div>
 
-<span class="n">strainmatrix</span>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>at 30°: σzx = -1.5213e+01; σzy = 2.6349e+01 (MPa)
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div id="cell-id=1c62285f" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ol start="5">
+<li></li>
+</ol>
+
+</div>
+</div>
+</div>
+</div><div id="cell-id=7a20a50b" class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">theta5</span> <span class="o">=</span> <span class="mf">90.0</span> <span class="c1"># On the y-axis, 𝜃=90</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">b</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">deg2rad</span><span class="p">(</span><span class="n">theta5</span><span class="p">))</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">b</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">deg2rad</span><span class="p">(</span><span class="n">theta5</span><span class="p">))</span>
+<span class="n">szx5</span> <span class="o">=</span> <span class="o">-</span><span class="n">theta_t</span><span class="o">*</span><span class="n">G</span><span class="o">*</span><span class="n">y</span>
+<span class="n">szy5</span> <span class="o">=</span> <span class="n">theta_t</span><span class="o">*</span><span class="n">G</span><span class="o">*</span><span class="n">x</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;On y-axis: σzx=</span><span class="si">{</span><span class="n">szx5</span><span class="o">*</span><span class="mf">1.0e-6</span><span class="si">:</span><span class="s2">.4e</span><span class="si">}</span><span class="s2">; σzy=</span><span class="si">{</span><span class="n">szy5</span><span class="o">*</span><span class="mf">1.0e-6</span><span class="si">:</span><span class="s2">.4e</span><span class="si">}</span><span class="s2"> (MPa)&quot;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>On y-axis: σzx=-3.0425e+01; σzy=1.8630e-15 (MPa)
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div id="cell-id=e5b368de" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ol start="6">
+<li></li>
+</ol>
+
+</div>
+</div>
+</div>
+</div><div id="cell-id=1233beeb" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">principalS</span><span class="p">(</span><span class="n">S</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&#39;&#39;&#39;Compute the principal stresses and their directions.</span>
+<span class="sd">    inputs: </span>
+<span class="sd">       S: given stress tensor, numpy array</span>
+<span class="sd">    return: </span>
+<span class="sd">       principal stresses (eigenValues), their direction cosines</span>
+<span class="sd">       (eigenVectors) ranked by its values. Right-hand-rule is enforced</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="n">eigenValues</span><span class="p">,</span> <span class="n">eigenVectors</span> <span class="o">=</span> <span class="n">lg</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">S</span><span class="p">)</span>  
+
+    <span class="c1">#Sort in order</span>
+    <span class="n">idx</span> <span class="o">=</span> <span class="n">eigenValues</span><span class="o">.</span><span class="n">argsort</span><span class="p">()[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>   
+    <span class="n">eigenValues</span> <span class="o">=</span> <span class="n">eigenValues</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span>
+    <span class="n">eigenVectors</span> <span class="o">=</span> <span class="n">eigenVectors</span><span class="p">[:,</span><span class="n">idx</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Pricipal stress (Eigenvalues):</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span><span class="n">eigenValues</span><span class="p">,</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+    
+    <span class="c1"># make the first element in the first vector positive (optional):</span>
+    <span class="c1">#eigenVectors[0,:] = eigenVectors[0,:]/np.sign(eigenVectors[0,0])</span>
+
+    <span class="c1"># Determine the sign for given eigenVector-1 and eigenVector-3</span>
+    <span class="n">eigenVectors</span><span class="p">[:,</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">cross</span><span class="p">(</span><span class="n">eigenVectors</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span> <span class="n">eigenVectors</span><span class="p">[:,</span><span class="mi">1</span><span class="p">])</span>
+
+    <span class="n">angle</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arccos</span><span class="p">(</span><span class="n">eigenVectors</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span><span class="o">*</span><span class="mi">180</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span>       <span class="c1"># in degree </span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Principal stress directions:</span><span class="se">\n</span><span class="si">{</span><span class="n">eigenVectors</span><span class="si">}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Possible angles (n1,x)=</span><span class="si">{</span><span class="n">angle</span><span class="si">}</span><span class="s2">∘ or </span><span class="si">{</span><span class="mi">180</span><span class="o">-</span><span class="n">angle</span><span class="si">}</span><span class="s2">∘&quot;</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">eigenValues</span><span class="p">,</span> <span class="n">eigenVectors</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div id="cell-id=fae6eff3" class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">theta6</span> <span class="o">=</span> <span class="mf">90.0</span> <span class="c1"># use the stress components on suface-y</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">b</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">deg2rad</span><span class="p">(</span><span class="n">theta6</span><span class="p">));</span> <span class="n">y</span> <span class="o">=</span> <span class="n">b</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">deg2rad</span><span class="p">(</span><span class="n">theta6</span><span class="p">))</span>
+<span class="n">szx6</span> <span class="o">=</span> <span class="o">-</span><span class="n">theta_t</span><span class="o">*</span><span class="n">G</span><span class="o">*</span><span class="n">y</span>
+<span class="n">szy6</span> <span class="o">=</span> <span class="n">theta_t</span><span class="o">*</span><span class="n">G</span><span class="o">*</span><span class="n">x</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;at 90°: σzx = </span><span class="si">{</span><span class="n">szx6</span><span class="si">:</span><span class="s2">.4e</span><span class="si">}</span><span class="s2">; σzy = </span><span class="si">{</span><span class="n">szy6</span><span class="si">:</span><span class="s2">.4e</span><span class="si">}</span><span class="s2"> (Pa) </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="n">s_np</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="n">szx6</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="n">szy6</span><span class="p">],[</span><span class="n">szx6</span><span class="p">,</span><span class="n">szy6</span><span class="p">,</span><span class="mi">0</span><span class="p">]],</span> <span class="n">dtype</span> <span class="o">=</span> <span class="nb">float</span><span class="p">)</span>
+<span class="n">eigs</span><span class="p">,</span> <span class="n">eigvs</span> <span class="o">=</span> <span class="n">principalS</span><span class="p">(</span><span class="n">s_np</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2"> 𝜏_max = </span><span class="si">{</span><span class="p">(</span><span class="n">eigs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="n">eigs</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span><span class="o">/</span><span class="mi">2</span><span class="si">:</span><span class="s2">.4e</span><span class="si">}</span><span class="s2">(Pa)&quot;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>at 90°: σzx = -3.0425e+07; σzy = 1.8630e-09 (Pa) 
+
+Pricipal stress (Eigenvalues):
+ [3.0425e+07 5.2380e-74 -3.0425e+07] 
+
+Principal stress directions:
+[[7.0711e-01 6.1232e-17 7.0711e-01]
+ [-4.3298e-17 1.0000e+00 -4.3298e-17]
+ [-7.0711e-01 7.0373e-50 7.0711e-01]]
+
+Possible angles (n1,x)=45.00000000000001∘ or 135.0∘
+
+ 𝜏_max = 3.0425e+07(Pa)
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div id="cell-id=d829122d" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ol start="7">
+<li></li>
+</ol>
+
+</div>
+</div>
+</div>
+</div><div id="cell-id=01694239" class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">T7</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">gr</span><span class="o">.</span><span class="n">transferM</span><span class="p">(</span><span class="mf">45.</span><span class="p">,</span> <span class="n">about</span> <span class="o">=</span> <span class="s1">&#39;y&#39;</span><span class="p">)</span> <span class="c1"># rotation axis, angle</span>
+<span class="n">T7</span><span class="nd">@s_np@T7</span><span class="o">.</span><span class="n">T</span>
 </pre></div>
 
      </div>
@@ -15515,9 +15634,9 @@ $</p>
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>array([[ 0.    ,  0.    ,  0.    ],
-       [ 0.    ,  0.0017,  0.    ],
-       [ 0.    ,  0.    , -0.0008]])</pre>
+<pre>array([[3.0425e+07, -1.3173e-09, 1.7993e-10],
+       [-1.3173e-09, 0.0000e+00, 1.3173e-09],
+       [-1.7993e-10, 1.3173e-09, -3.0425e+07]])</pre>
 </div>
 
 </div>
@@ -15526,7 +15645,21 @@ $</p>
 
 </div>
 
-</div><div id="cell-id=daf6ac01" class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div>
+<div id="cell-id=f9986f05" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ol start="8">
+<li></li>
+</ol>
+
+</div>
+</div>
+</div>
+</div><div id="cell-id=734e405d" class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -15534,16 +15667,15 @@ $</p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">L</span> <span class="o">=</span> <span class="mi">100</span><span class="o">*</span><span class="p">(</span><span class="mi">10</span><span class="o">**-</span><span class="mi">3</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="n">b</span><span class="o">-</span><span class="n">a</span>
+<span class="n">R</span> <span class="o">=</span> <span class="p">(</span><span class="n">b</span><span class="o">-</span><span class="n">a</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span>
+<span class="n">J</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="p">(</span><span class="n">R</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span><span class="o">*</span><span class="n">t</span>
 
-<span class="n">theta3</span> <span class="o">=</span> <span class="mi">90</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The polar second moment of area J = </span><span class="si">{</span><span class="n">J</span><span class="si">:</span><span class="s2">.4e</span><span class="si">}</span><span class="s2"> (m^4)&quot;</span><span class="p">)</span>
 
-<span class="n">T3</span><span class="p">,</span> <span class="n">about</span> <span class="o">=</span> <span class="n">transferM</span><span class="p">(</span><span class="n">theta3</span><span class="p">)</span>
+<span class="n">maxshear</span> <span class="o">=</span> <span class="n">T</span><span class="o">*</span><span class="n">R</span><span class="o">/</span><span class="n">J</span>
 
-<span class="n">strain3</span> <span class="o">=</span> <span class="n">T3</span><span class="nd">@strainmatrix@T3</span><span class="o">.</span><span class="n">T</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Strain: </span><span class="si">%3.6f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">strain3</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Elongation: </span><span class="si">%3.8f</span><span class="s2"> mm&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">L</span><span class="o">*</span><span class="n">strain3</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="mi">1000</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The maximum shear stress on the cross-section = </span><span class="si">{</span><span class="n">maxshear</span><span class="o">*</span><span class="mf">1.0e-6</span><span class="si">:</span><span class="s2">.4e</span><span class="si">}</span><span class="s2"> (MPa)&quot;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15563,8 +15695,49 @@ $</p>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Strain: 0.001667
-Elongation: 0.16666667 mm
+<pre>The polar second moment of area J = 1.2566e-11 (m^4)
+The maximum shear stress on the cross-section = 7.1620e+04 (MPa)
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div id="cell-id=d2b65200" class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">G</span> <span class="o">=</span> <span class="mf">85e9</span> <span class="c1"># Pa</span>
+<span class="n">L</span> <span class="o">=</span> <span class="mf">.7</span> <span class="c1"># m</span>
+<span class="n">theta_t</span> <span class="o">=</span> <span class="n">T</span><span class="o">/</span><span class="p">(</span><span class="n">G</span><span class="o">*</span><span class="n">J</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Twist angle at x = L = </span><span class="si">{</span><span class="p">(</span><span class="n">theta_t</span><span class="o">*</span><span class="n">L</span><span class="p">)</span><span class="si">:</span><span class="s2">.4e</span><span class="si">}</span><span class="s2"> rad or </span><span class="si">{</span><span class="n">np</span><span class="o">.</span><span class="n">degrees</span><span class="p">(</span><span class="n">theta_t</span><span class="o">*</span><span class="n">L</span><span class="p">)</span><span class="si">:</span><span class="s2">.4e</span><span class="si">}</span><span class="s2">°&quot;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Twist angle at x = L = 5.8981e+02 rad or 3.3794e+04°
 </pre>
 </div>
 </div>
@@ -15574,20 +15747,20 @@ Elongation: 0.16666667 mm
 </div>
 
 </div>
-<div id="cell-id=9fa9f186" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=1ad8fe77" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<ol start="4">
+<ol start="9">
 <li></li>
 </ol>
 
 </div>
 </div>
 </div>
-</div><div id="cell-id=ec9873f6" class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div id="cell-id=ce5ea3ed" class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -15595,14 +15768,13 @@ Elongation: 0.16666667 mm
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">theta4</span> <span class="o">=</span> <span class="mi">45</span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">J</span> <span class="o">=</span> <span class="mi">4</span><span class="o">*</span><span class="p">(</span><span class="n">R</span><span class="o">**</span><span class="mi">4</span><span class="p">)</span><span class="o">/</span><span class="p">((</span><span class="mi">4</span><span class="o">*</span><span class="n">R</span><span class="p">)</span><span class="o">/</span><span class="n">t</span><span class="p">)</span>
 
-<span class="n">T4</span><span class="p">,</span> <span class="n">about</span> <span class="o">=</span> <span class="n">transferM</span><span class="p">(</span><span class="n">theta4</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The polar second moment of area J = </span><span class="si">{</span><span class="n">J</span><span class="si">:</span><span class="s2">.4e</span><span class="si">}</span><span class="s2"> (m^4)&quot;</span><span class="p">)</span>
 
-<span class="n">strain4</span> <span class="o">=</span> <span class="n">T4</span><span class="nd">@strainmatrix@T4</span><span class="o">.</span><span class="n">T</span>
+<span class="n">maxshear</span> <span class="o">=</span> <span class="n">T</span><span class="o">*</span><span class="n">R</span><span class="o">/</span><span class="n">J</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Strain: </span><span class="si">%3.6f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">strain4</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Elongation: </span><span class="si">%3.8f</span><span class="s2"> mm&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="n">L</span><span class="o">*</span><span class="n">strain4</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="mi">1000</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The maximum shear stress on the cross-section = </span><span class="si">{</span><span class="n">maxshear</span><span class="o">*</span><span class="mf">1.0e-6</span><span class="si">:</span><span class="s2">.4e</span><span class="si">}</span><span class="s2"> (MPa)&quot;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15622,8 +15794,8 @@ Elongation: 0.16666667 mm
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Strain: 0.000833
-Elongation: 0.11785113 mm
+<pre>The polar second moment of area J = 2.0000e-12 (m^4)
+The maximum shear stress on the cross-section = 4.5000e+05 (MPa)
 </pre>
 </div>
 </div>
@@ -15632,21 +15804,7 @@ Elongation: 0.11785113 mm
 
 </div>
 
-</div>
-<div id="cell-id=eecc18ef" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<ol start="5">
-<li></li>
-</ol>
-
-</div>
-</div>
-</div>
-</div><div id="cell-id=2c9e9bd5" class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div id="cell-id=e6ca73bd" class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -15654,9 +15812,11 @@ Elongation: 0.11785113 mm
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">areachange</span> <span class="o">=</span> <span class="p">((</span><span class="n">L</span><span class="o">*</span><span class="mi">1000</span><span class="p">)</span><span class="o">*</span><span class="p">((</span><span class="n">L</span><span class="o">+</span><span class="p">(</span><span class="n">L</span><span class="o">*</span><span class="n">strain3</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]))</span><span class="o">*</span><span class="mi">1000</span><span class="p">))</span><span class="o">-</span><span class="p">((</span><span class="n">L</span><span class="o">*</span><span class="mi">1000</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">L</span><span class="o">*</span><span class="mi">1000</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">G</span> <span class="o">=</span> <span class="mf">85e9</span> <span class="c1"># Pa</span>
+<span class="n">L</span> <span class="o">=</span> <span class="mf">.7</span> <span class="c1"># m</span>
+<span class="n">theta_t</span> <span class="o">=</span> <span class="n">T</span><span class="o">/</span><span class="p">(</span><span class="n">G</span><span class="o">*</span><span class="n">J</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The change in area is </span><span class="si">%3.2f</span><span class="s2"> mm^2&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">areachange</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Twist angle at x = L = </span><span class="si">{</span><span class="p">(</span><span class="n">theta_t</span><span class="o">*</span><span class="n">L</span><span class="p">)</span><span class="si">:</span><span class="s2">.4e</span><span class="si">}</span><span class="s2"> rad or </span><span class="si">{</span><span class="n">np</span><span class="o">.</span><span class="n">degrees</span><span class="p">(</span><span class="n">theta_t</span><span class="o">*</span><span class="n">L</span><span class="p">)</span><span class="si">:</span><span class="s2">.4e</span><span class="si">}</span><span class="s2">°&quot;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15676,7 +15836,7 @@ Elongation: 0.11785113 mm
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>The change in area is 16.67 mm^2
+<pre>Twist angle at x = L = 3.7059e+03 rad or 2.1233e+05°
 </pre>
 </div>
 </div>
